@@ -1,3 +1,4 @@
+package Livre;
 public class Livre {
 	private String name;
 	private double price;
