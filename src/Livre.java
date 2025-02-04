@@ -26,12 +26,24 @@ public class Livre {
 	}
 
 	public int getQuantite() {
-		return quantite;
-	}
+        return quantite;
+    }
 
-	public void setQuantite(int quantite) {
-		this.quantite = quantite;
-	}
+    public void setQuantite(int quantity) {
+        this.quantite = quantity;
+    }
+    
+    public void setQuantite(int quantity, boolean update) {
+        if (update) {
+            this.quantite += quantity;
+        } else {
+            this.quantite = quantity;
+        }
+    }
+    
+    public int getQuantite(int quantity) {
+        return this.quantite;
+    }
 	
 	@Override
     public String toString() {
