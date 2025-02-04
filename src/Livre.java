@@ -1,11 +1,11 @@
 public class Livre {
 	private String name;
-	private float price;
+	private double price;
 	private int quantite;
 	
-	public Livre(String name, float price, int quantite) {
+	public Livre(String name, double d, int quantite) {
 		this.name = name;
-		this.setPrice(price);
+		this.setPrice(d);
 		this.setQuantite(quantite);
 	}
 	
@@ -17,11 +17,11 @@ public class Livre {
 		this.name = name;
 	}
 
-	public float getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(float price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
